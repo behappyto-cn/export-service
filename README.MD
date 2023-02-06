@@ -16,3 +16,7 @@ export-demo 为导出提供接口的应用，默认的导出测试接口。 expo
 字段的值。 // 所有的返回值比较是 List 的格式，目前只支持List格式。
 
 测试的模板在目录 export-demo/src/main/resources/static/template.xlsx
+
+### 管理页面
+管理界面：https://github.com/behappyto-cn/export-ui
+管理后台：https://github.com/behappyto-cn/export-parent
