@@ -1,0 +1,21 @@
+# 日志级别
+logging:
+  level:
+    root: info
+swagger:
+  title: 导出服务 对外接口文档
+  description: 导出服务的对外接口文档，当前的接口对接之后即可实现相关的导出功能。
+
+spring:
+  # 数据库连接
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/export_service?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 5
+      url: jdbc:mysql://127.0.0.1:3306/export_service?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: root

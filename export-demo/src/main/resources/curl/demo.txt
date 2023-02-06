@@ -1,0 +1,3 @@
+curl --location --request GET 'http://localhost:8088/template/list/v1?appId=fa08ae66-00b5-4fa7-a28c-fa6c6d117fa9' \
+--header 'appId: fa08ae66-00b5-4fa7-a28c-fa6c6d117fa9' \
+--header 'appSecret: 43G0Tw1++N7q3381dq574Q=='
