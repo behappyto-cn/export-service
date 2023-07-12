@@ -1,6 +1,6 @@
 ### 说明
 
-当前的服务是为了解决大量数据导出，需要占用大量的服务器资源、需要在页面长时间等待的问题，只需要配置导出模板， 提供导出数据的接口即可。 目前仅支持http协议GET、POST的导出、后期会新增dubbo、grpc等协议的支持。
+当前的服务是为了解决大量数据导出，需要占用大量的服务器资源、需要在页面长时间等待的问题，只需要配置导出模板， 提供导出数据的接口即可。 目前仅支持http协议GET、POST和curl命令行的导出、后期会新增dubbo、grpc等协议的支持。
 
 ### 流程
 
@@ -17,6 +17,12 @@ export-demo 为导出提供接口的应用，默认的导出测试接口。 expo
 
 测试的模板在目录 export-demo/src/main/resources/static/template.xlsx
 
-### 管理页面
+使用流程：
+1、启动export-service项目，可以打开当前的地址 http://127.0.0.1:8088/export-service/doc.html#/home 查看对应的接口信息。
+2、使用时，
+a、http://127.0.0.1:8088/export-service/doc.html#/export-service/%E6%A8%A1%E6%9D%BF%E7%AE%A1%E7%90%86/addUsingPOST_1 管理需要导出的模板
+b、http://127.0.0.1:8088/export-service/doc.html#/export-service/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86/addUsingPOST 新增导出的任务
+
+### 管理页面（待完善）
 管理界面：https://github.com/behappyto-cn/export-ui
 管理后台：https://github.com/behappyto-cn/export-parent
